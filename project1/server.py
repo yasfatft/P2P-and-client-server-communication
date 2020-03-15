@@ -111,7 +111,7 @@ def single_socket_thread_handling(connection, client_id):
 
 # initializing server socket
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server_socket.bind(('localhost', server_port))
+server_socket.bind((server_ip_address, server_port))
 server_socket.listen(max_clients_connection)
 
 clients_connected=0
